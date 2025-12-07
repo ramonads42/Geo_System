@@ -1,0 +1,44 @@
+.banner-cafeteria {
+  padding: 40px;
+  background: linear-gradient(45deg, #3E2723 30%, #8D6E63 90%); 
+  color: #FFF3E0; 
+  border-radius: 8px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 20px rgba(62, 39, 35, 0.3);
+}
+
+
+.card-personalizado {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-personalizado:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.form-container {
+  padding: 24px;
+  margin-bottom: 32px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tabela-header {
+  background-color: #8D6E63 !important;
+}
+
+.tabela-header th {
+  color: #FFFFFF !important;
+  font-weight: bold !important;
+}
+
+.card-api {
+  border: 2px solid #5D4037; 
+  position: sticky; 
+  top: 20px;
+  background-color: #FAFAFA;
+  text-align: center;
+  border-radius: 8px;
+}

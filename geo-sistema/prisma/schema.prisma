@@ -1,0 +1,37 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model Continente {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  descricao String
+  paises    Pais[]   
+}
+
+model Pais {
+  id           Int        @id @default(autoincrement())
+  nome         String
+  populacao    Int
+  idioma       String
+  moeda        String
+  continenteId Int
+  continente   Continente @relation(fields: [continenteId], references: [id])
+  cidades      Cidade[]   
+}
+
+model Cidade {
+  id        Int    @id @default(autoincrement())
+  nome      String
+  populacao Int
+  latitude  Float
+  longitude Float
+  paisId    Int
+  pais      Pais   @relation(fields: [paisId], references: [id])
+}
