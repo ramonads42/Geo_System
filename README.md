@@ -33,10 +33,10 @@ Certifique-se de que o serviço do Postgres está ativo e as variáveis de ambie
 
 No terminal, entre na pasta do servidor:
 
-cd geo-sistema
-npm install 
-npx prisma migrate dev
-npx nodemon src/server.ts
+  cd geo-sistema
+  npm install 
+  npx prisma migrate dev
+  npx nodemon src/server.ts
 
 
 
@@ -46,9 +46,9 @@ O servidor rodará em: http://localhost:3000
 
 Em outro terminal, entre na pasta do site:
 
-cd geo-frontend
-npm install
-npm run dev
+  cd geo-frontend
+  npm install
+  npm run dev
 
 
 
