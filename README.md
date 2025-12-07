@@ -34,7 +34,7 @@ Certifique-se de que o serviço do Postgres está ativo e as variáveis de ambie
 No terminal, entre na pasta do servidor:
 
 cd geo-sistema
-npm install
+npm install 
 npx prisma migrate dev
 npx nodemon src/server.ts
 
